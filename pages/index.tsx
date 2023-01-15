@@ -1,11 +1,11 @@
-import AwesomeHome from "@/components/awesomeHome/AwesomeHome";
-import Features from "@/components/features/Features";
-import Footer from "@/components/footer/Footer";
-import Banner from "@/components/Header/Banner";
-import Header from "@/components/Header/Header";
-import InnerPages from "@/components/InnerPages/InnerPages";
-import ScrollUpBtn from "@/components/ScrollUpBtn";
-import SEO from "@/components/SEO/SEO";
+import AwesomeHome from "../components/awesomeHome/AwesomeHome";
+import Features from "../components/features/Features";
+import Footer from "../components/footer/Footer";
+import Banner from "../components/Header/Banner";
+import Header from "../components/Header/Header";
+import InnerPages from "../components/InnerPages/InnerPages";
+import ScrollUpBtn from "../components/ScrollUpBtn";
+import SEO from "../components/SEO/SEO";
 import bg from "../assets/header.png";
 
 export default function DemoPage() {

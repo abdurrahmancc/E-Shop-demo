@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../../assets/logo.png";
 
 const Header = () => {
@@ -14,7 +14,9 @@ const Header = () => {
     }
   };
 
-  window.addEventListener("scroll", handleChangeBg);
+  useEffect(() => {
+    window.addEventListener("scroll", handleChangeBg);
+  }, []);
 
   return (
     <div
@@ -25,7 +27,7 @@ const Header = () => {
       <div className="max-w-[1443px] w-full mx-auto container px-4 lg:px-10 2xl:px-0">
         <div className="navbar p-0  ">
           <div className="navbar-start">
-            {/* <div className="dropdown">
+            <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +58,7 @@ const Header = () => {
                   <a>Support</a>
                 </li>
               </ul>
-            </div> */}
+            </div>
             <Link href={"/demo"}>
               <Image
                 src={logo}
