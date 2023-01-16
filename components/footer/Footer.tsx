@@ -6,11 +6,8 @@ import bg from "../../assets/footer.png";
 const Footer = () => {
   return (
     <div
-      style={{
-        backgroundImage: `url(${bg.src})`,
-        background: `linear-gradient(90deg, #4776E6 0%, #8E54E9 100%)`,
-      }}
-      className="py-[107px] text-center"
+      style={{ backgroundImage: `url(${bg.src})` }}
+      className="py-[107px] text-center bg-no-repeat bg-contain bg-center"
     >
       <Image
         src={logo}

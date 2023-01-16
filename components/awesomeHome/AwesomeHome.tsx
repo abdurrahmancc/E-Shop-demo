@@ -1,6 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import img1 from "../../assets/1_Home.png";
+import img2 from "../../assets/2_Home.png";
+import img3 from "../../assets/3_Home.png";
 
 const AwesomeHome = () => {
   return (
@@ -22,9 +25,14 @@ const AwesomeHome = () => {
                 className="absolute w-full h-full opacity-0 hover:opacity-100 duration-150 transition-all ease-linear"
               >
                 <div className="flex items-center justify-center h-full">
-                  <button className=" bg-gradient-to-r from-[#f9c536] to-[#f9c536] btn-animate  bg-primary text-[#031424] leading-[24px] text-[16px] px-[24px] py-[14px] font-[500]">
+                  <Link
+                    href={"https://e-shop-commerce.vercel.app"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=" bg-gradient-to-r from-[#f9c536] to-[#f9c536] btn-animate  bg-primary text-[#031424] leading-[24px] text-[16px] px-[24px] py-[14px] font-[500]"
+                  >
                     View Demo
-                  </button>
+                  </Link>
                 </div>
               </div>
               <figure style={{ boxShadow: `0px 4px 24px 8px rgba(0, 0, 0, 0.04)` }}>
@@ -51,14 +59,19 @@ const AwesomeHome = () => {
                 className="absolute w-full h-full opacity-0 hover:opacity-100 duration-150 transition-all ease-linear"
               >
                 <div className="flex items-center justify-center h-full">
-                  <button className=" bg-gradient-to-r from-[#f9c536] to-[#f9c536] btn-animate  bg-primary text-[#031424] leading-[24px] text-[16px] px-[24px] py-[14px] font-[500]">
+                  <Link
+                    href={"https://e-shop-commerce.vercel.app/home/home2"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=" bg-gradient-to-r from-[#f9c536] to-[#f9c536] btn-animate  bg-primary text-[#031424] leading-[24px] text-[16px] px-[24px] py-[14px] font-[500]"
+                  >
                     View Demo
-                  </button>
+                  </Link>
                 </div>
               </div>
               <figure style={{ boxShadow: `0px 4px 24px 8px rgba(0, 0, 0, 0.04)` }}>
                 <Image
-                  src={img1}
+                  src={img2}
                   width={460}
                   height={460}
                   className="w-full h-auto"
@@ -80,14 +93,19 @@ const AwesomeHome = () => {
                 className="absolute w-full h-full opacity-0 hover:opacity-100 duration-150 transition-all ease-linear"
               >
                 <div className="flex items-center justify-center h-full">
-                  <button className=" bg-gradient-to-r from-[#f9c536] to-[#f9c536] btn-animate  bg-primary text-[#031424] leading-[24px] text-[16px] px-[24px] py-[14px] font-[500]">
+                  <Link
+                    href={"https://e-shop-commerce.vercel.app/home/home3"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=" bg-gradient-to-r from-[#f9c536] to-[#f9c536] btn-animate  bg-primary text-[#031424] leading-[24px] text-[16px] px-[24px] py-[14px] font-[500]"
+                  >
                     View Demo
-                  </button>
+                  </Link>
                 </div>
               </div>
               <figure style={{ boxShadow: `0px 4px 24px 8px rgba(0, 0, 0, 0.04)` }}>
                 <Image
-                  src={img1}
+                  src={img3}
                   width={460}
                   height={460}
                   className="w-full h-auto"
