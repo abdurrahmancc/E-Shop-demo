@@ -18,6 +18,15 @@ const Header = () => {
     window.addEventListener("scroll", handleChangeBg);
   }, []);
 
+  function scrollToFeatures() {
+    const access: any = document.getElementById("features");
+    access.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+  function scrollToDemo() {
+    const access: any = document.getElementById("demo");
+    access.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
   return (
     <div
       className={`fixed transition-all duration-300 ease-linear w-full z-50 top-0 ${
@@ -27,63 +36,41 @@ const Header = () => {
       <div className="max-w-[1443px] w-full mx-auto container px-4 lg:px-10 2xl:px-0">
         <div className="navbar p-0  ">
           <div className="navbar-start">
-            <div className="dropdown">
-              <label tabIndex={0} className="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </label>
-              <ul
-                tabIndex={0}
-                className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
-              >
-                <li>
-                  <a>Demos</a>
-                </li>
-                <li>
-                  <a>Features</a>
-                </li>
-                <li>
-                  <a>Support</a>
-                </li>
-              </ul>
-            </div>
-            <Link href={"/demo"}>
+            <Link
+              href={"https://e-shop-commerce.vercel.app"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Image
                 src={logo}
                 height={65}
                 width={209}
-                className="xl:w-[209px] w-[100px] h-auto xl:h-[65px] lg:w-[150px] lg:h-[48px]"
+                className="lg:w-[209px] md:w-[180px] h-auto w-[120px] lg:h-[65px]"
                 alt="logo"
               />
             </Link>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
-              <li className="text-[#FFFFFF] leading-[30px] text-[20px] font-[600]">
+              <li
+                onClick={() => scrollToDemo()}
+                className="text-[#FFFFFF] leading-[30px] text-[20px] font-[600]"
+              >
                 <a>Demos</a>
               </li>
-              <li className="text-[#FFFFFF] leading-[30px] text-[20px] font-[600]">
+              <li
+                onClick={() => scrollToFeatures()}
+                className="text-[#FFFFFF] leading-[30px] text-[20px] font-[600]"
+              >
                 <a>Features</a>
               </li>
               <li className="text-[#FFFFFF] leading-[30px] text-[20px] font-[600]">
-                <a>Support</a>
+                <a href="#support">Support</a>
               </li>
             </ul>
           </div>
           <div className="navbar-end">
-            <a className="text-[#031424] px-3 sm:px-4 py-[10px] md:px-6 md:py-[14px] xl:px-[33px] xl:py-[18px] font-[500] xl:text-[24px] md:text-[18px] sm:text-[16px] text-sm leading-[36px] bg-gradient-to-r block from-[#f9c536] to-[#f9c536] btn-animate bg-primary">
+            <a className="text-[#031424] px-3 sm:px-4 py-[10px] md:px-6 md:py-[14px] xl:px-[33px] xl:py-[18px] font-[500] xl:text-[24px] md:text-[18px] sm:text-[16px] text-sm leading-[36px] bg-gradient-to-r cursor-pointer block from-[#f9c536] to-[#f9c536] btn-animate bg-primary">
               Purchase theme
             </a>
           </div>

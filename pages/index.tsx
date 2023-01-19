@@ -20,14 +20,20 @@ export default function DemoPage() {
         <Banner />
       </header>
       <main>
-        <section className="max-w-[1443px] my-20 lg:my-[130px] w-full mx-auto container px-4 lg:px-10 2xl:px-0">
+        <section
+          id="demo"
+          className="max-w-[1443px] my-20 lg:my-[130px] w-full mx-auto container px-4 lg:px-10 2xl:px-0"
+        >
           <AwesomeHome />
         </section>
         <section className="bg-[#F2F4F8] py-[130px]">
-          <Features />
-        </section>
-        <section className="max-w-[1443px] my-[130px] w-full mx-auto container px-4 lg:px-10 2xl:px-0">
           <InnerPages />
+        </section>
+        <section
+          id="features"
+          className="max-w-[1443px] my-20 lg:my-[130px] w-full mx-auto container px-4 lg:px-10 2xl:px-0"
+        >
+          <Features />
         </section>
         <ScrollUpBtn />
       </main>

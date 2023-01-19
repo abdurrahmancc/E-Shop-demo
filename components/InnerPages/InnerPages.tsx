@@ -51,7 +51,7 @@ const innerPageItems: InnerPageItems[] = [
 
 const InnerPages = () => {
   return (
-    <div>
+    <div className="max-w-[1443px] w-full mx-auto container px-4 lg:px-10 2xl:px-0">
       <h2 className="text-[#031424] text-center pb-1 font-[600] font-[#031424] xl:text-[46px] md:text-[36px] text-[24px] sm:text-[28px] xl:leading-[69px]">
         E-Shop inner Pages
       </h2>
