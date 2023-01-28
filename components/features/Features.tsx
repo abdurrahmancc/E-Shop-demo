@@ -1,7 +1,6 @@
 import React from "react";
 import FeatureCard from "./FeatureCard";
 import support from "../../assets/24-hours-support.svg";
-import customer from "../../assets/customer-service.svg";
 import document from "../../assets/document.svg";
 import edit from "../../assets/edit.svg";
 import responsive from "../../assets/responsive.svg";
@@ -43,7 +42,7 @@ const featuresItems: FeatureItems[] = [
     _id: "4",
     title: "Well Documented",
     description:
-      "The e-shop code is excellent and well-documented. Additionally, customizing it is really simple.",
+      "The e-shopi code is excellent and well-documented. Additionally, customizing it is really simple.",
     img: document,
   },
   {
@@ -64,14 +63,14 @@ const featuresItems: FeatureItems[] = [
     _id: "7",
     title: "Fast Loading Speed",
     description:
-      "e-shop is a very faster loading speed. Optimized for smaller build size, and faster dev compilation.",
+      "e-shopi is a very faster loading speed. Optimized for smaller build size, and faster dev compilation.",
     img: speedometer,
   },
   {
     _id: "8",
     title: "Modern Design",
     description:
-      "e-shop is a modern template for eCommerce Sites, supermarkets, and online stores, etc...",
+      "e-shopi is a modern template for eCommerce Sites, supermarkets, and online stores, etc...",
     img: webDesign,
   },
   {

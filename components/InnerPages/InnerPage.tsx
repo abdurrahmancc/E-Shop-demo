@@ -40,7 +40,7 @@ const InnerPage = ({ item }: ItemsTypes) => {
             width={460}
             height={460}
             className="w-full h-auto"
-            alt="e-shop home page demo"
+            alt="e-shopi home page demo"
           />
         </figure>
       </div>

@@ -53,7 +53,7 @@ const InnerPages = () => {
   return (
     <div className="max-w-[1443px] w-full mx-auto container px-4 lg:px-10 2xl:px-0">
       <h2 className="text-[#031424] text-center pb-1 font-[600] font-[#031424] xl:text-[46px] md:text-[36px] text-[24px] sm:text-[28px] xl:leading-[69px]">
-        E-Shop inner Pages
+        E-Shopi inner Pages
       </h2>
       <p className="text-[#666666] text-center xl:text-[24px] text-[16px] sm:text-lg md:text-xl xl:leading-[36px]">
         20+ e-commerce inner Pages
