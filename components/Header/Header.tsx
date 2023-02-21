@@ -65,7 +65,9 @@ const Header = () => {
                 <a>Features</a>
               </li>
               <li className="text-[#FFFFFF] leading-[30px] text-[20px] font-[600]">
-                <a href="#support">Support</a>
+                <a target={"_blank"} rel="noreferrer" href="https://support-29169.web.app/inbox">
+                  Support
+                </a>
               </li>
             </ul>
           </div>
